@@ -1,726 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!--a-->
-<!doctype html>
-<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>Homepage</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
-<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112995426-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+        gtag('config', 'UA-112995426-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
-<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <title>bi0s</title>
 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-<script>
-var looper;
-var degrees = 0;
-function rotateAnimation(el,speed){
-	var elem = document.getElementById(el);
-	if(navigator.userAgent.match("Chrome")){
-		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Firefox")){
-		elem.style.MozTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("MSIE")){
-		elem.style.msTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Opera")){
-		elem.style.OTransform = "rotate("+degrees+"deg)";
-	} else {
-		elem.style.transform = "rotate("+degrees+"deg)";
-	}
-	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
-	degrees++;
-	if(degrees > 359){
-		degrees = 1;
-	}
-	//document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
-}
-</script>
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="sss/sss.min.js"></script>
+    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        jQuery(function($) {
+            $('.slider').sss();
+        });
+    </script>
+    <style>
+    .round{
+      border-radius: 50%;
+      margin: auto;
+      margin-left: 60px;
+      padding: 10px;
+      width: 100px;}
+    }
+    .img-with-text {
+        text-align: justify;
+        width: auto;
+    }
+
+    .img-with-text img {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    </style>
 
 </head>
-<body>
-<div style="overflow:hidden;">
-<a style="position: absolute; right: 0;" class="link animated fadeInUp delay-1s" href="https://bi0s.typeform.com/to/hmQhlS" data-mode="1" target="_blank">Join Us</a>
-<header class="header" id="header"><!--header-start-->
-	<div class="container">
-		<a href="#">
-		   <div>
-			  <img id="logo" src="img/bi0s0.png" alt="logo">
-                <div>
-			     <img id="logo_name" src="img/bi0s_name.png" alt="">
+
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom navbar-solid">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="#">
+
+                        <!-- logo image  -->
+                        <img src="assets/images/bi0slogo.png" alt="Logo" width="90%">
+
+                    </a>
                 </div>
-		   </div>
-	    </a>
 
-        <ul class="we-create animated fadeInUp delay-1s">
-        	<!--<h1>bi<b>0</b>s</h1>-->
-					<a href="#service"><b class="arrow-down wow fadeInDown delay-01s ease-in-out"><i class="fa fa-arrow-down"></i>
-</b></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-        </ul>
-
-
-    </div>
-</div>
-</header>
-
-
-
-<!--header-end-->
-
-
-<nav class="main-nav-outer" id="test"><!--main-nav-start-->
-	<div class="container">
-        <ul class="main-nav">
-        	<li><a class="menu-a" href="#header"><span>Home</span></a></li>
-            <li><a class="menu-a" href="#service"><span>bi0s</span></a></li>
-            <li><a class="menu-a" href="#Portfolio"><span>Team</span></a></li>
-            <li><a class="menu-a" href="#client"><span>Chief</span></a></li>
-            <li><a class="menu-a" href="#team"><span>Mentors</span></a></li>
-            <li><a class="menu-a" href="#contact"><span>Contact</span></a></li>
-        </ul>
-        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
-    </div>
-</nav><!--main-nav-end-->
-
-
-
-<section class="main-section" id="service"><!--main-section-start-->
-	<div class="container">
-    	<h2>bi0s</h2>
-    	<h6>Amrita University CTF team.</h6>
-        <div class="row">
-        	<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-            	<div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-gear"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Web Application Security</h3>
-                        <p>A group of people who have proven their worth through multiple CVEs &amp; Bug-Bounties</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-code"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Binary Exploitation</h3>
-                        <p>Team of aggressive tacklers finding the vulnerabilities at the depths of softwares and libraries</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa-android"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Android Security</h3>
-                        <p>League of enthusiasts unmasking the issues in Android applications and internals</p>
-                    </div>
-                </div>
-                <div class="service-list">
-                	<div class="service-list-col1">
-                    	<i class="fa fa-cogs"></i>
-                    </div>
-                	<div class="service-list-col2">
-                        <h3>Reverse Engineering</h3>
-                        <p>A group of insane people who crack binaries apart 1 bit at a time to uncover the hidden secrets</p>
-                    </div>
-									</div>
-										<div class="service-list">
-		                	<div class="service-list-col1">
-		                    	<i class="fa fa-search"></i>
-		                    </div>
-										<div class="service-list-col2">
-	                        <h3>Forensics</h3>
-	                        <p>Unravelling the mysteries of the footprints left behind by the attacks</p>
-	                    </div>
-										</div>
-                </div>
-								<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-									<img src="img/macbook-pro.png" alt="" style="width:350px;height:350px;" align="right">
-								</figure>
             </div>
+            <!-- /.navbar-header -->
 
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
 
-        </div>
-	</div>
-</section><!--main-section-end-->
-
-
-
-<section class="main-section alabaster"><!--main-section alabaster-start-->
-	<div class="container">
-    	<div class="row">
-			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-            	<img  src="img/iphone.png" alt="">
-            </figure>
-        	<div class="col-lg-7 col-sm-8 featured-work">
-            	<h2>About bi0s</h2>
-            	<p class="padding-b">Team bi0s from Amrita University is a well-established group of computer security enthusiasts focusing on various areas including but not limited to web application security, computer forensics, binary exploitation, reverse engineering, cryptography and Android security.</p><p>
-							bi0s is largely a CTF team actively taking part in the international CTFs round the year besides carrying out research on security issues in the real world. Fuelled by the urge for community service, bi0s has been organizing workshops and educating the masses about the need for cyber security.</p><br>
-            	<div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-02s">
-                    	<i class="fa-arrow-circle-right"></i>
-                    </div>
-                	<div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>Achievements</h3>
-                        <p>First team from India, formed in 2007.
-													 bi0s was invited to compete in PHDays CTF, Russia.
-												   Conducts InCTF, Exclusively for Indian students. So far, has conducted 6 editions.
-													 bi0s was ranked 68th globally in Google CTF 2016 amongst 2500 teams
-												   Finished CSAW 2016 finals at 2nd position</p>
-                    </div>
-                </div>
-                <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-04s">
-                    	<i class="fa-bookmark"></i>
-                    </div>
-                	<div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>At present</h3>
-            
-													<b>Avinash Joshi</b> in 2M,
-													<b>Varun Ramani</b>, <b>Reno Robert</b> and <b>Akshay Krishnan</b> in VMware,
-													<b>Anirudh Anand</b> in Flipkart and others in DRDO.
-													<!--<b>Anirudh</b> is in Microsoft Hall of Fame and has found many vulnerabilities in real world softwares.--> </p>
-                    </div>
-                </div>
-              <!--  <div class="featured-box">
-                	<div class="featured-box-col1 wow fadeInRight delay-06s">
-                    	<i class="fa-dashboard"></i>
-                    </div>
-                	<div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>SEO optimized</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>
-                </div>-->
-                <a class="Learn-More" href="#">Learn More</a>
-            </div>
-        </div>
-	</div>
-</section><!--main-section alabaster-end-->
-
-
-
-<section class="main-section paddind" id="Portfolio"><!--main-section-start-->
-	<div class="container">
-      <div class="portfolioFilter">
-       <ul class="Portfolio-nav wow fadeIn delay-02s">
-        <ul class="nav nav-pills nav-justified">
-        <li><h1><a href="#" data-filter="*" class="current" >Team bi0s</a></h1></li	>
-        </ul>
-        <ul class="nav nav-tabs nav-justified">
-        <li><a href="#" data-filter=".web,.binary,.reverse,.forensics,.android,.crypto"  >Current Team</a></li>
-        <li><h1><a href="#" data-filter=".alumini" class=".alumini" >Alumini</a></h1></li>
-        </ul>
-
-						<li></br><a href="#" data-filter=".web" >Web Security</a></li>
-            <li>&nbsp;<a href="#" data-filter=".binary" >Binary Exploitation</a>&nbsp;</li>
-            <li>&nbsp;<a href="#" data-filter=".android" >Android Security</a>&nbsp;</li>
-						<li>&nbsp;<a href="#" data-filter=".reverse" >Reverse Engineering</a>&nbsp;</li>
-						<li>&nbsp;<br><br><a href="#" data-filter=".crypto" >CryptoGraphy</a>&nbsp;</li>
-						<li>&nbsp;<a href="#" data-filter=".forensics" >Forensics</a>&nbsp;</li>
-						<li>&nbsp;<a href="#" data-filter=".hardware" >Hardware Security</a>&nbsp;</li>
-
-        </ul>
-       </div>
-
-	</div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-
-
-
-								<div class="Portfolio-box alumini">
-	                <a href="#"><img class="img-circle" src="img/Portfolio-pic20.jpg" alt="" ></a>
-	                <a href="https://twitter.com/a0xnirudh">
-	                <h3>Anirudh Anand</h3>
-	                  <p>Web Application Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	              </div>
-                <div class="Portfolio-box web">
-                	<a href="#"><img class="img-circle" src="img/heeraj.JPG" alt="" ></a>
-                	<a href="https://twitter.com/heerajnair">
-                	<h3>Heeraj</h3>
-                    <p>Server Side Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-								<div class="Portfolio-box web">
-                	<a href="#"><img class="img-circle" src="img/gokulK.jpg" alt="" ></a>
-                	<a href="https://twitter.com/gkgkrishna33">
-                	<h3>Gokul Krishna P</h3>
-                    <p>Client Side Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-								<div class=" Portfolio-box alumini">
-										<a href="#"><img class="img-circle" src="img/akic.jpg" alt="" ></a>
-										<a href="https://twitter.com/Akhil_Mahendra">
-										<h3>Akhil Mahendra</h3>
-											<p>Server Side Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								</div>
-
-								<div class=" Portfolio-box android">
-									<a href="#"><img class="img-circle" src="img/abhic.jpg" alt="" ></a>
-									<a href="https://twitter.com/abhi_r3v0">
-									<h3>Abhishek J M</h3>
-										<p>Android Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								</div>
-                <div class=" Portfolio-box binary">
-                	<a href="#"><img class="img-circle" src="img/jkc.jpg" alt="" ></a>
-                	<a href="https://twitter.com/jkrshnmenon">
-                	<h3>Jayakrishna Menon</h3>
-                    <p>Heap based Exploitation</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <div class=" Portfolio-box alumini" >
-                	<a href="#"><img class="img-circle" src="img/Portfolio-pic4.jpg" alt="" ></a>
-                	<a href="https://twitter.com/Rakesh13044">
-                	<h3>Rakesh Parchuri</h3>
-                    <p>Binary Exploitation</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <!--<div class=" Portfolio-box alumini">
-											<a href="#"><img class="img-circle" src="img/Vivek.jpg" alt="" ></a>
-											<a href="https://twitter.com/frefty">
-											<h3>Vivek Parikh</h3>
-												<p>Reverse Engineering</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>-->
-								<div class=" Portfolio-box forensics">
-										<a href="#"><img class="img-circle" src="img/shivac.jpg" alt="" ></a>
-										<a href="https://twitter.com/shivnambiar1">
-										<h3>Shivkrishna A</h3>
-											<p>Memory Forensics</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box reverse">
-											<a href="#"><img class="img-circle" src="img/arjunTU.jpg" alt="" ></a>
-											<a href="https://twitter.com/ArjunKikz">
-											<h3>Arjun T U</h3>
-												<p>Reverse Engineering</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box web">
-											<a href="#"><img class="img-circle" src="img/aswinmguptha.jpg" alt="" ></a>
-											<a href="https://twitter.com/aswinmguptha">
-											<h3>Aswin M Guptha</h3>
-												<p>Web Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box reverse">
-											<a href="#"><img class="img-circle" src="img/Akshay.jpg" alt="" ></a>
-											<a href="https://twitter.com/r00tus3r">
-											<h3>Akshay Ajayan</h3>
-												<p>Reverse Engineering</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box reverse">
-											<a href="#"><img class="img-circle" src="img/sid-m.jpg" alt="" ></a>
-											<a href="https://twitter.com/Tr3x__">
-											<h3>Siddharth Muralee</h3>
-												<p>Reverse Engineering</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-
-								<div class=" Portfolio-box web">
-								<a href="#">
-								<img class="img-circle" src="img/tarun1.jpg" alt="" ></a>
-								<a href="https://twitter.com/tarunkantg">
-                   								<h3>Tarunkant Gupta</h3>
-												<p>Web Exploitation</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-								</div>
-
-									<div class=" Portfolio-box binary">
-                	<a href="#"><img class="img-circle" src="img/sidhant.jpg" alt="" ></a>
-                	<a href="https://twitter.com/">
-                	<h3>Sidhant Gupta</h3>
-                    <p>Binary Exploitation</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <div class=" Portfolio-box binary">
-                	<a href="#"><img class="img-circle" src="img/vignesh1.jpg" alt="" ></a>
-                	<a href="https://twitter.com/">
-                	<h3>Vignesh S Rao</h3>
-                    <p>Binary Exploitation</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-                <div class=" Portfolio-box reverse">
-											<a href="#"><img class="img-circle" src="img/saastha.jpg" alt="" ></a>
-											<a href="https://twitter.com/">
-											<h3>Saastha Vasan</h3>
-												<p>Reverse Engineering</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box crypto">
-											<a href="#"><img class="img-circle" src="img/ashu.JPG" alt="" ></a>
-											<a href="https://twitter.com/s0rc3r3r12">
-											<h3>Ashutosh Ahelleya</h3>
-												<p>CryptoGraphy</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class=" Portfolio-box forensics">
-										<a href="#"><img class="img-circle" src="img/Karthik1.jpg" alt="" ></a>
-										<a href="https://twitter.com/nambiar_kartuzz">
-										<h3>Karthik Nambiar</h3>
-											<p>Forensics</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-									<div class="Portfolio-box hardware">
-
-										<a href="#"><img class="img-circle" src="img/Ashwin-N.jpg" alt="" ></a>
-
-                        				<a href="https://twitter.com/0xsilipwn">
-
-										<h3>Ashwin Nambiar</h3>
-											<p>Hardware Security</p><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</div>
-
-
-
-
-
-    </div>
-</section><!--main-section-end-->
-
-
-<section class="main-section client-part" id="client"><!--main-section client-part-start-->
-	<div class="container">
-		<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
-    	<div class="row">
-        	<div class="col-lg-12">
-            	<p class="client-part-haead wow fadeInDown delay-05">"While solving problems, dig at the roots instead of just hacking at the leaves! "</p>
-            </div>
-        </div>
-    	<ul class="client wow fadeIn delay-05s">
-        	<li><a href="#">
-            	<img src="img/vipin1.jpg" alt="" style="height:200px; width:200px;">
-                <h3>Vipin Pavithran</h3>
-                <span>Chief Mentor, bi0s.</span>
-            </a></li>
-        </ul>
-    </div>
-</section><!--main-section client-part-end-->
-<div class="c-logo-part"><!--c-logo-part-start-->
-	<div class="container">
-    	<ul>
-        	<!--<li><a href="#"><img src="img/c-liogo1.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo2.png" alt=""></a></li>-->
-            <!--<li><a href="https://amritabi0s.wordpress.com/"><img src="img/c-liogo3.png" alt=""></a></li>
-            <!--<li><a href="#"><img src="img/c-liogo4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/c-liogo5.png" alt=""></a></li>-->
-    	</ul>
-	</div>
-</div><!--c-logo-part-end-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-	<div class="container">
-        <h2>team</h2>
-        <h6>Take a closer look into our <b>Mentors</b>.</h6>
-        <div class="team-leader-block clearfix">
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s">
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/giric.jpg" alt="" style="width:300px;height:250px";>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/seshagiri-prabhu-8ab1721b?authType=NAME_SEARCH&authToken=dXfo&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A69076355%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472456973256%2Ctas%3Aseshagiri" class="fa-linkedin"></a></li>
-                        <!--<li><a href="" class="fa-facebook"></a></li>-->
-                        <!--<li><a href="https://plus.google.com/+Seshagiriprabhu" class="fa-google-plus"></a></li>-->
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Seshagiri N Prabhu</h3>
-                <span class="wow fadeInDown delay-03s">Advisor</span>
-                <p class="wow fadeInDown delay-03s">Research Scholar with 5+ years of experience in Binary Exploitation.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader  wow fadeInDown delay-06s">
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/arvind.jpg" alt="" style="width:300px;height:250px;">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/arvind-s-raj-95738222?authType=NAME_SEARCH&authToken=-rvw&locale=en_US&srchid=4227231271472457216565&srchindex=1&srchtotal=15&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A4227231271472457216565%2CVSRPtargetId%3A78552787%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH" class="fa-linkedin"></a></li>
-                        <!--<li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>-->
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Arvind S Raj</h3>
-                <span class="wow fadeInDown delay-06s">Research Scholar</span>
-                <p class="wow fadeInDown delay-06s">Research Scholar with 5+ experience in Reverse Engineering and Binary Exploitation.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s">
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/bithin1.jpg" alt="" style="width:300px;height:250px;">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/bithin2007?authType=name&authToken=RXJg&trk=Skyline_click_NBM&sl=NBM%3B422723127%3A1472456976411%3B0%3B69076355%3B" class="fa-linkedin"></a></li>
-                        <!--<li><a href="https://www.facebook.com/bithin.alangot?fref=ts" class="fa-facebook"></a></li>
-                        <!--<li><a href="#" class="fa-pinterest"></a></li>-
-                        <li><a href="https://plus.google.com/110642866185135350816/posts" class="fa-google-plus"></a></li>-->
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Bithin Alangot</h3>
-                <span class="wow fadeInDown delay-09s">Research Scholar</span>
-                <p class="wow fadeInDown delay-09s">PhD research scholar in Cyber Security.</p>
-            </div>
-			<div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s">
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team-leader-pic4.jpg" alt="" style="width:300px;height:250px;">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/renorobert?authType=NAME_SEARCH&authToken=Ymyo&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A71856241%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472457301910%2Ctas%3Areno%20" class="fa-linkedin"></a></li>
-                        <!--<li><a href="https://www.facebook.com/bithin.alangot?fref=ts" class="fa-facebook"></a></li>
-                        <!--<li><a href="#" class="fa-pinterest"></a></li>
-                        <li><a href="https://plus.google.com/110642866185135350816/posts" class="fa-google-plus"></a></li>-->
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Reno Robert</h3>
-                <span class="wow fadeInDown delay-09s">Security Engineer</span>
-            </div>
-        </div>
-    </div>
-</section><!--main-section team-end-->
-
-
-
-
-<section class="business-talking"><!--business-talking-start-->
-	<div class="container">
-        <h2>Amrita University, Amritapuri.</h2>
-    </div>
-</section><!--business-talking-end-->
-<div class="container">
-<section class="main-section contact" id="contact">
-
-        <div class="row">
-        	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
-            	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Address:</h3>
-                	<span>Amrita University,<br>Amritapuri, Kollam, Kerala.</span>
-                </div>
-                <!--<div class="contact-info-box phone clearfix">
-                	<h3><i class="fa-phone"></i>Phone:</h3>
-                	<span>1-800-BOO-YAHH</span>
-                </div>-->
-                <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>email:</h3>
-                	<span>amritabi0s1@gmail.com</span>
-                </div>
-            	<!--<div class="contact-info-box hours clearfix">
-                	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
-                </div>-->
-                <ul class="social-link">
-                	<li class="twitter"><a href="https://www.twitter.com/teambi0s"><i class="fa-twitter"></i></a></li>
-									<li class="twitter"><a href="https://amritabi0s.wordpress.com/"><i class="fa-wordpress"></i></a></li>
-                    <!--<li class="facebook"><a href="https://www.facebook.com/teambi0s"><i class="fa-facebook"></i></a></li>
-                    <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
-                    <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                    <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>-->
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#team">Team</a></li>
+                    <li><a data-scroll href="#mentors">Mentors</a></li>
+                    <li><a data-scroll target="_blank" href="//blog.bi0s.in">Blog</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
+                    <li><a target="_blank" href="//bi0s.typeform.com/to/hmQhlS">Join us</a></li>
                 </ul>
             </div>
-        	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-            	<div class="form">
-			<form action="https://formspree.io/amritabi0s1@gmail.com" method="POST">
-                	<input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                    <input class="input-text" type="text" name="_replyto" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                	<textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                    <input class="input-btn" type="submit" value="send message">
-		    </form>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="#" class="section home">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="slider" style="margin:0 auto;">
+                        <img src="assets/images/slideshow/001.jpg">
+                        <img src="assets/images/slideshow/002.jpg">
+                        <img src="assets/images/slideshow/003.jpg">
+                    </div>
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-->
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About Us</h3>
+                    Team bi0s from Amrita University is a well-established group of computer security enthusiasts focusing on various areas including but not limited to web application security, computer forensics, binary exploitation, reverse engineering, cryptography and Android security.</p><p>
+
+bi0s is largely a CTF team actively taking part in the international CTFs round the year besides carrying out research on security issues in the real world. Fuelled by the urge for community service, bi0s has been organizing workshops and educating the masses about the need for cyber security.
+
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6">
+                  <div class="areas-1">
+
+<b>Achievements</b>
+<p>
+First team from India, formed in 2007. bi0s was invited to compete in PHDays CTF, Russia. Conducts InCTF, Exclusively for Indian students. So far, has conducted 6 editions. bi0s was ranked 68th globally in Google CTF 2016 amongst 2500 teams Finished CSAW 2016 finals at 2nd position</p>
+                        </div>
+                        <div class="areas-2">
+                          <b>At present</b>
+                            <p><b>Avinash Joshi</b> in 2M, <b>Varun Ramani</b>, <b>Reno Robert</b> and <b>Akshay Krishnan</b> in VMware, <b>Anirudh Anand</b> in Flipkart and others in DRDO.</p>
+                        </div>
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="row">
+                <div>
+                  <h3 class="section-title">Team</h3>
+                    <div id="carousel">
+                      <div class="btn-bar"><ul class="nav nav-tabs nav-justified">
+                          <li><a href="#team">Current Team</a></li>
+                          <li>
+                              <a href="#team">Alumni</a></li>
+                      </ul>
+                        <div id="buttons"> <a id="prev" href="#"><</a><a id="next" href="#">></a> </div></div>
+                        <div id="slides" class="col-sm-12 col-md-12">
+                            <ul>
+                                <li class="slide">
+                                    <div class="quoteContainer">
+                                      <div class="img-with-text col-md-3 ">
+                                      <img class="round" src="../teambi0s.github.io/img/Portfolio-pic20.jpg">
+                                      <a href="https://twitter.com/a0xnirudh" style="color:#428bca;"><p>Anirudh Anand  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Web Application Security</p>
+                                      </div>
+                                      <div class="img-with-text col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/heeraj.jpg">
+                                      <a href="https://twitter.com/heerajnair" style="color:#428bca;"><p>Heeraj  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Server Side Security</p>
+                                      </div>
+                                      <div class="img-with-text col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/gokulK.jpg">
+                                      <a href="https://twitter.com/gkgkrishna33" style="color:#428bca;"><p>Gokul Krishna P  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Client Side Security</p>
+                                      </div>
+                                      <div class="img-with-text col-md-3 ">
+                                      <img class="round" src="../teambi0s.github.io/img/akhil.jpg">
+                                      <a href="https://twitter.com/Akhil_Mahendra" style="color:#428bca;"><p>Akhil Mahendra  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Server Side Security</p>
+                                      </div>
+                                    </div>
+                                    <div class="authorContainer">
+                                      <div class="img-with-text col-sm-12 col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/abhishek.jpg">
+                                        <a href="https://twitter.com/abhi_r3v0" style="color:#428bca;"><p>Abhishek J M  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Android Security</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/jkc.jpg">
+                                        <a href="https://twitter.com/jkrshnmenon" style="color:#428bca;"><p>Jayakrishna Menon  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Heap based Exploitation</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 ">
+                                        <img class="round" src="../teambi0s.github.io/img/Portfolio-pic4.jpg">
+                                        <a href="https://twitter.com/Rakesh13044" style="color:#428bca;"><p>Rakesh Parchuri  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Binary Exploitation</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/shivac.jpg">
+                                      <a href="https://twitter.com/shivnambiar1" style="color:#428bca;"><p>Shivkrishna A  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Memory Forensics</p>
+                                    </div>
+
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                  <div class="quoteContainer">
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/arjun.jpg">
+                                        <a href="https://twitter.com/ArjunKikz" style="color:#428bca;"><p>Arjun T U  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Reverse Engineering</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/aswinmguptha.jpg">
+                                        <a href="https://twitter.com/aswinmguptha" style="color:#428bca;"><p>Aswin M Guptha  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Web Security</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/akshay_ajayan.jpg">
+                                        <a href="https://twitter.com/r00tus3r" style="color:#428bca;"><p>Akshay Ajayan  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Reverse Engineering</p>
+                                      </div>
+                                      <div class="img-with-text  col-md-3 filterDiv current">
+                                        <img class="round" src="../teambi0s.github.io/img/sid-m.jpg">
+                                        <a href="https://twitter.com/Tr3x__" style="color:#428bca;"><p>Siddharth Muralee  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Reverse Engineering</p>
+                                      </div>
+                                  </div>
+                                  <div class="authorContainer">
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/tarun1.jpg">
+                                      <a href="https://twitter.com/tarunkantg" style="color:#428bca;"><p>Tarunkant Gupta  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Web Exploitation</p>
+                                    </div>
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/sidhant.jpg">
+                                      <a href="" style="color:#428bca;"><p>Sidhant Gupta  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Binary Exploitation</p>
+                                    </div>
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/vignesh1.jpg">
+                                      <a href="" style="color:#428bca;"><p>Vignesh S Rao  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Binary Exploitation</p>
+                                    </div>
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/saastha.jpg">
+                                      <a href="" style="color:#428bca;"><p>Saastha Vasan  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Reverse Engineering</p>
+                                    </div>
+
+                                  </div>
+                                </li>
+                                <li class="slide">
+                                  <div class="quoteContainer">
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/ashu.jpg" >
+                                      <a href="https://twitter.com/s0rc3r3r12" style="color:#428bca;"><p>Ashutosh Ahelleya  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Cryptography</p>
+                                    </div>
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/Karthik1.jpg">
+                                    <a href="https://twitter.com/nambiar_kartuzz" style="color:#428bca;">  <p>Karthik Nambiar  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Forensics</p>
+                                    </div>
+                                    <div class="img-with-text  col-md-3 filterDiv current">
+                                      <img class="round" src="../teambi0s.github.io/img/Ashwin-N.jpg">
+                                      <a href="https://twitter.com/0xsilipwn" style="color:#428bca;"><p>Ashwin Nambiar  <i class="fa fa-twitter" aria-hidden="true"></i></a><br>Hardware Security</p>
+                                    </div>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                    <script  src="js/index.js"></script>
+
+
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="mentors" class="section mentors">
+        <div class="container">
+            <div class="row">
+                    <h3 class="section-title">Mentors</h3>
+                    <div class="col-sm-12 col-md-12" style="text-align:center">
+                            <img src="assets/images/team/vipin.jpg" width="20%" height="20%" style="border-radius: 50%;">
+                            <li class="myList">VIPIN PAVITHRAN</li>
+                            <li class="myList">Founder bi0s/FOSS@amrita</li>
+                    </div>
+                  <div class="col-md-12">
+
+                    <div class="col-sm-12 col-md-3">
+                        <img src="assets/images/team/seshagiri.jpg" width="70%" height="70%" style="border-radius: 50%;padding: 30px 15px;">
+                        <li class="myList"><a href="https://www.linkedin.com/in/seshagiri-prabhu-8ab1721b?authType=NAME_SEARCH&authToken=dXfo&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A69076355%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472456973256%2Ctas%3Aseshagiri">Seshagiri N Prabhu</a></li>
+                        <li class="myList">Advisor</li>
+                        <li class="myList">Research Scholar with</li>
+                        <li class="myList">5+ years of experience</li>
+                        <li class="myList">in Binary Exploitation</li>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <img src="assets/images/team/arvind.jpg" width="70%" height="70%" style="border-radius: 50%;padding: 30px 15px;">
+                        <li class="myList"><a href="https://www.linkedin.com/in/arvind-s-raj-95738222?authType=NAME_SEARCH&authToken=-rvw&locale=en_US&srchid=4227231271472457216565&srchindex=1&srchtotal=15&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A4227231271472457216565%2CVSRPtargetId%3A78552787%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3ANAME_SEARCH">Arvind S Raj</a></li>
+                        <li class="myList">Research Scholar</li>
+                        <li class="myList">Research Scholar with</li>
+                        <li class="myList">5+ experience in Reverse</li>
+                        <li class="myList"> Engineering and Binary Exploitation.</li>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <img src="assets/images/team/bithin.jpg" width="70%" height="70%" style="border-radius: 50%;padding: 30px 15px;">
+                        <li class="myList"><a href="https://www.linkedin.com/in/bithin2007?authType=name&authToken=RXJg&trk=Skyline_click_NBM&sl=NBM%3B422723127%3A1472456976411%3B0%3B69076355%3B">Bithin Alangot</a></li>
+                        <li class="myList">Research Scholar</li>
+                        <li class="myList">PhD research scholar</li>
+                        <li class="myList">in Cyber Security.</li>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <img src="assets/images/team/reno.jpg" width="80%" height="80%" style="border-radius: 50%;padding: 30px 15px;">
+                        <li class="myList"><a href="https://www.linkedin.com/in/renorobert?authType=NAME_SEARCH&authToken=Ymyo&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A71856241%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472457301910%2Ctas%3Areno%20">Reno Robert</a></li>
+                        <li class="myList">Security Engineer</li>
+                    </div>
+                </div>
+              </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="contact" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Contact</h3>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/contact@bi0s.in" method="POST">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea type="text" rows="6" cols="40" class="form-control" placeholder="Message" id="msg" name="msg" required></textarea>
+                        </div>
+                        <div class="text-center mt20">
+                            <input type="submit" class="btn btn-blue" id="registration-submit-btn" value="Send"></input>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-block">
+                        <li><a href="https://www.twitter.com/teambi0s"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/teambi0s"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://amritabi0s.wordpress.com/"><i class="ion-social-wordpress"></i></a></li>
+                        <!-- <li><a href="https://bi0s.in"><i class="ion-android-globe"></i></a></li> -->
+                    </ul>
+                    <!-- <p class="site-info">Theme by <a href="http://technextit.com">Technext Limited</a></p> -->
                 </div>
             </div>
         </div>
-</section>
-</div>
+    </footer>
 
-<div class = "container"><!--twitter_timeline-start-->
-	<section class="main-section twitter_timeline" id="twitter_timeline">
-		<a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/teambi0s?ref_src=twsrc%5Etfw">Tweets by teambi0s</a>
-	</section>
-</div><!--twitter_timeline-end-->
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2017</span>
-    </div>
-    <!--
-        All links in the footer should remain intact.
-        Licenseing information is available at: http://bootstraptaste.com/license/
-        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
-    -->
-</footer>
-
-
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#test').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false
-
-        });
-
-    });
-</script>
-
-  <script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100
-      }
-    );
-    wow.init();
-
-  </script>
-
-
-<script type="text/javascript">
-	$(window).load(function(){
-
-		$('.main-nav li a').bind('click',function(event){
-			var $anchor = $(this);
-
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 102
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script>
-
-<script type="text/javascript">
-
-$(window).load(function(){
-
-
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 375,
-      columns = null;
-
-
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-
-            filter: selector,
-         });
-         return false;
-    });
-
-});
-
-</script>
-
-<script>rotateAnimation("logo",70);</script>
-
-<style>
-
-
-
-@media screen and (max-width:400px) {
-	#logo {
-		width: 90%;
-		height: 90%;
-	}
-	#logo_name {
-		width: 35%;
-		height: 35%;
-		position: absolute;
-    	left: 33%;
-    	top: 11%;
-        margin:auto;
-
-	}
-}
-
-@media screen and (min-width:401px) {
-	#logo {
-		width: 90%;
-		height: 90%;
-	}
-	#logo_name {
-		width: 40%;
-		height: 40%;
-		position: absolute;
-    	left: 30%;
-    	top: 11%;
-        margin:auto;
-
-	}
-}
-
-@media screen and (min-width:700px) {
-	#logo {
-		width: 50%;
-		height: 50%;
-	}
-
-	#logo_name {
-		width: 30%;
-		height: 40%;
-		position: absolute;
-    	left: 35%;
-    	top: 15%;
-        margin:auto;
-
-	}
-}
-
-
-@media screen and (min-width:900px) {
-	#logo {
-		width: 50%;
-		height: 50%;
-	}
-
-	#logo_name {
-		width: 35%;
-		height: 50%;
-		position: absolute;
-        margin: 0 auto;
-    	top: 12%;
-        left: 33%;
-
-	}
-}
-
-
-</style>
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="js/jssor.slider-26.9.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/main.js"></script>
+    
 </body>
+
 </html>
