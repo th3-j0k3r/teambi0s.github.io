@@ -1,2 +1,2 @@
-# bi0s-workshop
+# bi0s-website
 
